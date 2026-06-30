@@ -1,0 +1,10 @@
+# Runtime deps for the Streamlit QA app ONLY. The offline extraction/build
+# scripts (extract_ddr.py, build_*.py, plot_extraction/*) need the heavier
+# packages in requirements-extraction.txt - those are NOT needed to deploy.
+streamlit>=1.40
+openai>=1.0
+fastembed>=0.3
+rank-bm25>=0.2.2
+numpy>=1.26
+pandas>=2.0
+python-dotenv>=1.0

@@ -1,0 +1,5 @@
+# Streamlit reads config from .streamlit/config.toml (not the repo root).
+# Accent colour is fixed; background/text follow the browser light/dark mode.
+[theme]
+primaryColor = "#1f6feb"
+font = "sans serif"

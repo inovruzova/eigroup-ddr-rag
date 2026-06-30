@@ -1,0 +1,188 @@
+SCHEMA REPORT (union of all columns seen)
+Generated: 2026-06-29 17:02
+Files scanned: 1000
+Each table's schema is the union of every column seen.
+Partial columns (present in only some files) are listed so a real
+variant (e.g. tvd vs mtvd, in many files) is distinguishable from
+an extraction artifact (in just one or two).
+
+============================================================
+TABLE: reports   (1000 file(s), 31 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: survey_station   (186 file(s), 5 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: summary_of_activities   (1000 file(s), 1 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: summary_of_planned_activities   (1000 file(s), 1 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: drilling_fluid   (736 file(s), 30 columns)
+============================================================
+  PARTIAL columns (col: files_with_it / files_with_table):
+    filtration_tests_comment: 704/736
+
+============================================================
+TABLE: operations   (995 file(s), 6 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: pore_pressure   (475 file(s), 5 columns)
+============================================================
+  PARTIAL columns (col: files_with_it / files_with_table):
+    time: 471/475
+    depth_mmd: 471/475
+    depth_tvd: 471/475
+    equ_mud_weight: 471/475
+    reading: 471/475
+
+============================================================
+TABLE: lithology_information   (178 file(s), 8 columns)
+============================================================
+  PARTIAL columns (col: files_with_it / files_with_table):
+    start_depth_tvd: 64/178
+    end_depth_tvd: 65/178
+    end_depth_mtvd: 113/178
+    start_depth_mtvd: 114/178
+
+============================================================
+TABLE: gas_reading_information   (127 file(s), 14 columns)
+============================================================
+  PARTIAL columns (col: files_with_it / files_with_table):
+    depth_to_top_tvd: 26/127
+    depth_to_top_mtvd: 101/127
+
+============================================================
+TABLE: core_information   (13 file(s), 8 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: log_information   (41 file(s), 6 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: stratigraphic_information   (56 file(s), 3 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: casing_liner_tubing   (31 file(s), 14 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: welltest_information   (2 file(s), 13 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: bit_record   (52 file(s), 14 columns)
+============================================================
+  PARTIAL columns (col: files_with_it / files_with_table):
+    run_no: 51/52
+    bit_size: 51/52
+    bit_type: 51/52
+    iadc_code: 51/52
+    manufacturer: 51/52
+    hrs_drilled: 51/52
+    start_mmd: 51/52
+    end_mmd: 51/52
+    hole_made: 51/52
+    hours_drilled: 51/52
+    form_rop: 51/52
+    total_rop: 51/52
+    total_hole_made: 51/52
+    total_hrs_drilled: 51/52
+
+============================================================
+TABLE: equipment_failure_information   (148 file(s), 7 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+TABLE: perforation_information   (11 file(s), 6 columns)
+============================================================
+  all columns present in every file
+
+============================================================
+UNRECOGNIZED (orphaned tables — review)
+============================================================
+  15_9_19_A_1997_07_29.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_A_1997_09_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_A_1997_10_08.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_A_1997_10_17.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_BT2_1997_12_24.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_BT2_1998_01_06.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_BT2_1998_01_13.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_S_1992_09_11.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_S_1992_09_21.extracted.json  page 0 table 0: ['Summary report']
+  15_9_19_S_1992_09_21.extracted.json  page 0 table 2: ['', '']
+  15_9_19_S_1992_11_19.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_S_1992_11_23.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_S_1992_12_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_S_1992_12_18.extracted.json  page 0 table 0: ['Summary report']
+  15_9_19_S_1992_12_18.extracted.json  page 0 table 2: ['', '']
+  15_9_19_ST2_1993_01_13.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_ST2_1993_01_23.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_19_ST2_1993_03_16.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_10_2009_04_26.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_10_2009_04_26.extracted.json  page 0 table 2: ['', '']
+  15_9_F_10_2009_04_29.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_10_2009_05_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_10_2009_05_06.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_10_2009_06_02.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_B_2013_05_29.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_B_2013_05_30.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_B_2013_06_08.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_B_2013_06_12.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_B_2013_06_13.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_T2_2013_04_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_T2_2013_04_04.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_11_T2_2013_04_04.extracted.json  page 0 table 2: ['', '']
+  15_9_F_11_T2_2013_04_22.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_T2_2013_05_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_11_T2_2013_05_14.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_11_T2_2013_05_14.extracted.json  page 0 table 2: ['', '']
+  15_9_F_12_2007_06_15.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2007_06_26.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2007_06_27.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2007_06_29.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_12_2007_06_29.extracted.json  page 0 table 2: ['', '']
+  15_9_F_12_2007_07_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2007_07_09.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2007_08_12.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2007_08_21.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_12_2007_08_21.extracted.json  page 0 table 2: ['', '']
+  15_9_F_12_2007_09_05.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2008_01_26.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2014_11_24.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_12_2014_11_27.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_14_2008_05_17.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_14_2008_05_31.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_14_2008_07_06.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_14_2010_09_13.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_14_2010_09_13.extracted.json  page 0 table 2: ['', '']
+  15_9_F_14_2010_09_17.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_14_2016_09_15.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2007_12_28.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2007_12_29.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2008_09_09.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2008_09_11.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2008_09_22.extracted.json  page 0 table 0: ['Summary report']
+  15_9_F_15_2008_09_22.extracted.json  page 0 table 2: ['', '']
+  15_9_F_15_2008_10_04.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2008_12_01.extracted.json  page 0 table 0: ['Summary report', None]
+  15_9_F_15_2008_12_04.extracted.json  page 0 table 0: ['Summary report', None]

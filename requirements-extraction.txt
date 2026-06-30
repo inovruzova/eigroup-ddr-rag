@@ -1,0 +1,11 @@
+# Offline-only: PDF extraction + plot OpenCV pipeline + database build.
+# Install locally to re-run extract_ddr.py / build_database.py /
+# plot_extraction. NOT used by the deployed Streamlit app.
+-r requirements.txt
+pdfplumber==0.11.10
+pdfminer.six==20260107
+pypdfium2==5.10.1
+pytesseract==0.3.13
+opencv-python==4.13.0.92
+matplotlib==3.11.0
+pillow==12.2.0

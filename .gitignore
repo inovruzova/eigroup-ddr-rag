@@ -1,0 +1,22 @@
+# --- secrets / local env (NEVER commit) ---
+.env
+.streamlit/secrets.toml
+
+# --- python ---
+.venv
+venv/
+__pycache__
+*.pyc
+
+# --- raw inputs + editor cruft: NOT needed by the deployed app ---
+PDF_version_1000/
+pdf_version_1000/
+*.png
+*.pdf
+*.docx
+~$*
+plot_extraction/out/
+ddr_extraction/parsed_pdfs_coordinates/
+
+# NOTE: ddr.db, embeddings.npy, embeddings_docs.json are intentionally NOT
+# ignored - the app needs them at runtime, so they MUST be committed.

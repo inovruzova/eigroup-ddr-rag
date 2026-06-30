@@ -1,0 +1,9 @@
+# Only the accent colour is fixed. Background and text follow the browser's
+# light/dark mode so the app is readable either way.
+# Want the app ALWAYS white regardless of browser mode? Add:  base = "light"
+[theme]
+primaryColor = "#1f6feb"
+font = "sans serif"
+
+[server]
+runOnSave = true
